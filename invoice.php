@@ -19,10 +19,12 @@ priceCal($qty, $price);
 
 $total_price = priceCal($qty, $price);
 
-echo "The total price after discount is ". priceCal($qty, $price)."</br>";
+// echo "The total price after discount is ". priceCal($qty, $price)."</br>";
 
-echo "The total price  is ". $total_price ;
+// echo "The total price  is ". $total_price ;
 
+
+header("location: invoiceform.php?msg=Success & totalprice=".$total_price);
 
 
 ?>

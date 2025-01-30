@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>
+
+
+
+
+        <?php 
+
+
+         if(isset($_GET['msg'])){
+            echo $_GET['msg'];
+         }
+            
+           
+
+        ?>
+
+    </h1>
     
         <form action="invoice.php" method="post"> 
 
@@ -18,6 +36,16 @@
         <input type="submit" value="Save">
 
         </form>
+
+        <h1>
+
+<?php 
+
+    echo $_GET['totalprice'];
+
+?>
+
+</h1>
 
 
 </body>
