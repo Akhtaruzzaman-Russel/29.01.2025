@@ -37,7 +37,7 @@
 
         </form>
 
-        <h1>
+        <h1>  Total price
 
 <?php 
 

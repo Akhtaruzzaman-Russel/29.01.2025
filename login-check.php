@@ -11,8 +11,15 @@
 
 <?php
 
-$username="zaman";
-$password="123456";
+// $username="zaman";
+// $password="123456";
+
+$username = $_POST["email"];
+$password = $_POST["password"];
+
+// echo "aste parchi",
+
+// exit();
 
 /*
 if ($username == "zaman" && $password=="123456"){
@@ -25,10 +32,10 @@ if ($username == "zaman" && $password=="123456"){
 
 
 
-if ($username == "zaman" && $password=="123456"){
+if ($username == "admin@gmail.com" && $password=="123456"){
     header ("location: dashboard.php");
 }else{
-    header ("location: login.php");
+    header ("location: login.php?msg=Login Failed - Try again");
 }
 
 
