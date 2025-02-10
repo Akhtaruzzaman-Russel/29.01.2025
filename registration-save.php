@@ -29,8 +29,8 @@ if($conn==true){
 
 if($conn==true){
     // echo "Connected successfully";
-    // $query="INSERT INTO users (username, email, password) VALUES ('$username', '$useremail', '$userpassword')";
-    $query="INSERT INTO `client`( `user`, `email`, `password`) VALUES ('$username','$useremail','$userpassword')";
+    $query="INSERT INTO user (username, email, password) VALUES ('$username', '$useremail', '$userpassword')";
+    // $query="INSERT INTO `client`( `user`, `email`, `password`) VALUES ('$username','$useremail','$userpassword')";
    $sql= mysqli_query($conn,$query);
 
    if($sql){
