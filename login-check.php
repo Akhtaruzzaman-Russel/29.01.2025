@@ -11,11 +11,44 @@
 
 <?php
 
+$conn=mysqli_connect("localhost","root","","db");
+$useremail = $_POST["email"];
+$password = $_POST["password"];
+
+$query="SELECT * FROM user
+
+WHERE email='$useremail' AND password='$password'";
+
+if($conn==true){
+    $sql= mysqli_query($conn,$query);
+    if(mysqli_num_rows($sql)>0){
+        echo"data ache";
+    }else {
+       echo "data pai nai";  
+    }
+    
+}
+
+// $sql= mysqli_query($conn,$query);
+
+// if(mysqli_num_rows($sql)>0){
+//     echo"data ache";
+// }else {
+//    echo "data pai nai";  
+// }
+
+// var_dump($sql);
+
+exit();
 // $username="zaman";
 // $password="123456";
 
-$username = $_POST["email"];
-$password = $_POST["password"];
+// $username = $_POST["email"];
+// $password = $_POST["password"];
+
+
+
+
 
 // echo "aste parchi",
 
